@@ -6,12 +6,12 @@ public class method {
         System.out.println(c);
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        add(a,b);
-        System.out.println(add2(a,b));
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            add(a,b);
+            System.out.println(add2(a,b));
+        }
 
     }
     public static int add2(int x,int y){
