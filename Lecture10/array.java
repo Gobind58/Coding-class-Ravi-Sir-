@@ -44,6 +44,19 @@ public class array {
             }
         }
         System.out.println("Minimum element: " + min);
+
+    }
+    public void reverse(){
+        for (int i = 0; i < n / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[n - 1 - i];
+            arr[n - 1 - i] = temp;
+            System.out.print(i);
+        }
+        System.out.println();
+    }
+    public void LeftShift(){
+        
     }
     public static void main(String[] args) {
         array a=new array();
@@ -51,6 +64,9 @@ public class array {
         a.Target();
         a.max();
         a.min();
+        a.reverse();
+
+        
     }
    
 }
