@@ -55,9 +55,22 @@ public class array {
         }
         System.out.println();
     }
+    
     public void LeftShift(){
-        
+        for (int i = 0; i < n - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[n - 1] = 0; 
     }
+    public void RightShift(){
+        for (int i = n - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
+        }
+        arr[0] = 0;
+    }
+
+        
+    
     public static void main(String[] args) {
         array a=new array();
         a.display(a.arr);

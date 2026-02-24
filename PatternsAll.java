@@ -3,12 +3,7 @@ import java.util.Scanner;
 public class PatternsAll {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        // You can call each pattern method with appropriate N
-        // For example:
         int n = sc.nextInt();
-        
-        // Uncomment the pattern you want to test
         pattern1(n);
         pattern2(n);
         pattern3(n);
